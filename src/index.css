@@ -11,3 +11,136 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem;
+  align-items: center;
+  background-color: #E1F0CA;
+  color: #013A20;
+  text-align: center;
+  line-height: 220%;
+  min-height: 100vh;
+}
+
+.language-selector {
+  margin-bottom: 3rem;
+}
+
+.language-button {
+  background-color: #BACC81;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.language-button:hover {
+  background-color: #508d68;
+  color: white;
+}
+
+.language-button.active {
+  background-color: #2c4a38;
+  color: white;
+}
+
+.logo {
+  width: 20%;
+}
+
+.underConst {
+  width: 30%;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* Input styles */
+.email-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #4a7c59;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  background-color: #4a7c59;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #3a6149;
+}
+
+/* Message styles */
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.success {
+  color: #2c4a38;
+}
+
+.error {
+  color: #a83232;
+}
+
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .App {
+    padding: 1rem 2rem;
+  }
+
+  .logo {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .underConst {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .language-button {
+    padding: 8px 10px;
+    margin: 0 8px;
+    font-size: 14px;
+  }
+
+  .email-input {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .submit-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
