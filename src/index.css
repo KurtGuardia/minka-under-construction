@@ -64,6 +64,11 @@ p {
   font-size: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: #508d68;
+}
+
 /* Input styles */
 .email-input {
   width: 100%;
