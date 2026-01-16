@@ -22,7 +22,8 @@ const translations = {
     successMessage: 'Email submitted successfully!',
     errorMessage:
       'Error submitting email. Please try again.',
-      gofundme: "We are a young startup. Would you support us on our development?: "
+    gofundme:
+      'We are a young startup. Would you support us on our development?: ',
   },
   es: {
     title: 'Nuestra plataforma está en construcción',
@@ -42,7 +43,8 @@ const translations = {
       '¡Correo electrónico enviado con éxito!',
     errorMessage:
       'Error al enviar el correo electrónico. Por favor, inténtelo de nuevo.',
-      gofundme: "Somos una startup jóven. ¿Nos podrías dar apoyo?: "
+    gofundme:
+      'Somos una startup jóven. ¿Nos podrías dar apoyo?: ',
   },
 }
 
@@ -138,8 +140,6 @@ function App() {
           {translations[language].submitButton}
         </button>
       </form>
-
-      <p>{translations[language].gofundme} <a href="https://gofund.me/52fffa98" target='_blank' rel='noreferrer'>en GoFundMe. 🙏</a></p>
     </div>
   )
 }
